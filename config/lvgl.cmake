@@ -26,7 +26,7 @@ message("=====================")
 message(${SRC_LIST})
 message("=====================")
 
-add_library(lvgl STATIC ${SRC_LIST})
+add_library(lvgl SHARED ${SRC_LIST})
 
 target_include_directories(
     lvgl 

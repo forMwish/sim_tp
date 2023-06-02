@@ -109,15 +109,15 @@ bool sim_lcd_touchpad_is_pressed(){
     close(sock);
     // printf("[sim_lcd_client] %s success\n", __FUNCTION__);
 
-    printf("press:%d\n", ((int32_t*)reply)[0]);
+    // printf("press:%d\n", ((int32_t*)reply)[0]);
     if (((int32_t*)reply)[0] == 0)
     {
-        printf("press:false\n");
+        // printf("press:false\n");
         return false;
     }
     else if (((int32_t*)reply)[0] == 1)
     {
-        printf("press:true\n");
+        // printf("press:true\n");
         return true;
     }
     else
